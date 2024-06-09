@@ -7,6 +7,6 @@ namespace Final_Project.Repository
 {
     public class UserRepository
     {
-        public static 
+       
     };
 }
