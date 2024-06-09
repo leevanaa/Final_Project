@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navbar.master.cs" Inherits="Final_Project.Master.Navbar" %>
+
+<%@ Register Src="~/Master/AdminNavigation.ascx" TagName="AdminNavigation" TagPrefix="uc" %>
+<%@ Register Src="~/Master/CustomerNavigation.ascx" TagName="CustomerNavigation" TagPrefix="uc" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <uc:CustomerNavigation ID="Uc_Customer" runat ="server"  />
+            <uc:AdminNavigation ID="Uc_Admin" runat ="server"/>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
